@@ -3,6 +3,9 @@
 
 Este é o meu portfólio online, desenvolvido para mostrar minhas habilidades em desenvolvimento web e outros projetos de programação. O portfólio foi criado com HTML e CSS.
 
+![image](https://github.com/user-attachments/assets/12650295-f14d-4d0e-a5ce-5cbda0cb60c1)
+
+
 ## Tecnologias Utilizadas
 
 - **HTML5**: Estrutura da página.
@@ -17,4 +20,4 @@ Este é o meu portfólio online, desenvolvido para mostrar minhas habilidades em
 ## Como Acessar
 
 Você pode acessar o meu portfólio através do seguinte link:  
-[Portfólio Márcio Luca](https://marcioluca.github.io/portifolio-alura/index.html)
+[Portfólio Márcio Lucas](https://marcioluca.github.io/portifolio-alura/index.html)
