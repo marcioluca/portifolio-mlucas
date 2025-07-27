@@ -1,4 +1,4 @@
-Perfeito, Márcio! Com essa nova informação, aqui está a versão atualizada e mais completa do seu `README.md`, incluindo o uso de JavaScript para lógica e alternância entre tema claro/escuro (dark mode):
+
 
 ---
 
