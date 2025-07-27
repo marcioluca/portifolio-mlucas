@@ -1,41 +1,242 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Márcio Lucas, desenvolvedor Full-Stack especializado em React, HTML e CSS.">
-    <link rel="stylesheet" href="css/styles.css">
-    <title>Portifolio de Márcio Lucas</title>
+    <title>Portfólio - Márcio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    <header class="cabecalho">
-        <nav class="cabecalho__menu">
-            <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+
+    <header>
+        <nav>
+            <div class="logo"><span>Portfólio</span></div>
+            <ul class="nav-links">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="theme-toggle-btn" class="theme-toggle" aria-label="Alternar tema">
+             <i class="fas fa-sun"></i></button>
+
+            <button class="hamburger-menu" arial-label="abrir-menu">
+             <i class="fa fa-bars"></i></button>
+
+             
         </nav>
     </header>
-    <main class="apresentacao">
-        <section class="apresentacao__conteudo">
-            <h1 class="apresentacao__conteudo__titulo"><strong class="titulo-destaque">Full-Stack Developer:</strong> Construindo Experiências Digitais que Impactam</h1>
-            <p class="apresentacao__conteudo__texto">Oi, sou Márcio Lucas, Desenvolvedor Full-Stack. Minha missão é criar experiências digitais que realmente fazem a diferença. De pequenos negócios a grandes ideias, ajudo você a levar seu projeto do conceito à realidade. Vamos construir algo incrível juntos?</p>
-            <div class="apresentacao__links">
-                <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://www.linkedin.com/in/marcio-lucas-dev/">
-                    <img src="assets/linkedin.png" alt="linkedin logo">
-                    Linkedin
-                </a>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://github.com/marcioluca">
-                    <img src="assets/github.png" alt="Github logo">
-                    Github
-                </a>
-                <a class="apresentacao__links__navegacao" target="_blank" href="https://instagram.com/marcio_lucca">
-                    <img src="assets/instagram.png" alt="instagram logo">
-                    instagram
-                </a>
+
+    <section id="inicio">
+        <div class="inicio-container">
+            <img src="assets/avatar.png" alt="Foto Perfil" class="avatar">
+            <h1 id="texto-digitado"></h1>
+
+            <p class="subtitulo-hero">Crio soluções de software robustas e analiso dados para transformar informações em resultados.</p>
+            <div class="botoes-cta">
+            <a href="#projetos" class="cta-button cta-primario">Ver projetos</a>
+            <a href="#contato" class="cta-button cta-primario">Fale comigo</a>
             </div>
-        </section>
-        <img class="apresentacao__foto" src="assets/Imagem.png" alt="Imagem do Progamador.">  
-    </main>
-    <footer class="rodape">Development by Márcio Lucas</footer>
+        </div>
+        
+
+    </section>
+
+    <section id="sobre" class="secao">
+        <h2>Sobre Mim</h2>
+        <div class="sobre-mim-container">
+            <div class="sobre-mim-texto">
+                <h3>Desenvolvedor apaixonado por desafios e soluções criativas</h3>
+                <p>
+                    Olá! Sou um entusiasta da tecnologia com uma forte paixão por transformar ideias complexas em
+                    software funcional e elegante. Minha jornada no desenvolvimento é movida pela curiosidade e pelo
+                    prazer de resolver problemas, seja construindo a lógica de um sistema ou analisando dados para
+                    extrair insights valiosos.
+                </p>
+                <p>
+                    Atualmente, meu foco de estudo e desenvolvimento está em Java para a construção de aplicações
+                    back-end escaláveis e seguras, e em Python para o vasto campo da Análise de Dados. Acredito que
+                    a combinação dessas duas áreas me permite criar soluções completas e inteligentes.
+                </p>
+                <p>
+                    Estou sempre em busca de novas oportunidades para aprender, colaborar e contribuir em projetos que
+                    gerem impacto positivo.
+                </p>
+            </div>
+            <div class="sobre-mim-skills">
+                <h3>Principais Tecnologias</h3>
+                <div class="skills-grid">
+                    <div class="skill-item"><i class="devicon-java-plain-wordmark"></i><span>Java</span></div>
+                    <div class="skill-item"><i class="devicon-python-plain-wordmark"></i><span>Python</span></div>
+                    <div class="skill-item"><i class="devicon-spring-plain-wordmark"></i><span>Spring</span></div>
+                    <div class="skill-item"><i class="devicon-javascript-plain"></i><span>JavaScript</span></div>
+                    <div class="skill-item"><i class="devicon-html5-plain-wordmark"></i><span>HTML5</span></div>
+                    <div class="skill-item"><i class="devicon-css3-plain-wordmark"></i><span>CSS3</span></div>
+                    <div class="skill-item"><i class="devicon-postgresql-plain-wordmark"></i><span>PostgreSQL</span></div>
+                    <div class="skill-item"><i class="devicon-mongodb-plain-wordmark"></i><span>MongoDB</span></div>
+                    <div class="skill-item"><i class="devicon-git-plain-wordmark"></i><span>Git</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="secao">
+    <h2>Serviços</h2>
+    <div class="servicos-container">
+
+        <div class="servico-card">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Desenvolvimento Web</h3>
+            <p>Criação de sites e aplicações web responsivas, modernas e otimizadas para a melhor experiência do usuário.</p>
+        </div>
+
+        <div class="servico-card">
+            <i class="fas fa-cogs"></i>
+            <h3>Aplicações Java</h3>
+            <p>Desenvolvimento de sistemas back-end robustos e aplicações desktop com a plataforma Java.</p>
+        </div>
+
+        <div class="servico-card">
+            <i class="fas fa-plug"></i>
+            <h3>Integração com APIs</h3>
+            <p>Conexão do seu sistema com serviços de terceiros, automatizando processos e enriquecendo funcionalidades.</p>
+        </div>
+
+        <div class="servico-card">
+            <i class="fas fa-wrench"></i>
+            <h3>Manutenção de Sistemas</h3>
+            <p>Correção de bugs, otimização de performance e atualizações para garantir a saúde e a segurança do seu software.</p>
+        </div>
+
+    </div>
+</section>
+
+    <section id="projetos" class="secao">
+    <h2>Meus Projetos</h2>
+    <div class="projetos-container">
+
+        <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="assets/projects-img/project-crud-img.png" alt="Imagem de um projeto de API">
+                <div class="projeto-overlay">
+                    <a href="https://github.com/marcioluca/CadastroCliente" target="_blank" class="link-icone" title="Ver no GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://github.com/marcioluca" target="_blank" class="link-icone" title="Ver projeto ao vivo">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projeto-info">
+                <h3>API Para Cadastro de Clientes</h3>
+                <div class="projeto-stack">
+                    <span>Java</span>
+                    <span>Swing</span>
+                    <span>IntelliJ IDEA</span>
+                </div>
+                <p>Desenvolvimento de uma CRUD com interface gráfica para cadastar usuários na memória aplicando boas práticas de desenvolvimento com Java.</p>
+            </div>
+        </div>
+
+        <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="assets/projects-img/project-img.jpg" alt="Imagem de um projeto web">
+                <div class="projeto-overlay">
+                    <a href="" target="_blank" class="link-icone" title="Ver no GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" target="_blank" class="link-icone" title="Ver projeto ao vivo">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projeto-info">
+                <h3>Análise de Vendas</h3>
+                <div class="projeto-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                </div>
+                <p>Análise de um conjunto de dados de vendas para identificar tendências, padrões de consumo e visualização dos principais insights para tomada de decisão.</p>
+            </div>
+        </div>
+
+                <div class="projeto-card">
+            <div class="projeto-imagem">
+                <img src="assets/projects-img/project-img.jpg" alt="Imagem de um projeto web">
+                <div class="projeto-overlay">
+                    <a href="" target="_blank" class="link-icone" title="Ver no GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="" target="_blank" class="link-icone" title="Ver projeto ao vivo">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="projeto-info">
+                <h3>Análise de Vendas</h3>
+                <div class="projeto-stack">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Matplotlib</span>
+                </div>
+                <p>Análise de um conjunto de dados de vendas para identificar tendências, padrões de consumo e visualização dos principais insights para tomada de decisão.</p>
+            </div>
+        </div>
+        
+
+        </div>
+</section>
+
+    <section id="contato" class="secao">
+    <h2>Entre em Contato</h2>
+    <div class="contato-container">
+
+        <div class="contato-info">
+            <h3>Vamos conversar?</h3>
+            <p>Estou sempre aberto a novas oportunidades, projetos e colaborações. Sinta-se à vontade para entrar em contato através do formulário ao lado ou pelas minhas redes.</p>
+            <div class="contato-links">
+                <a href="https://www.linkedin.com/in/marcio-lucas-dev/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/marcioluca" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+            <a href="assets/Curriculo_Marcio.pdf" download="curriculo-marcio-lucas.pdf" class="cta-button cta-primario">
+                <i class="fas fa-download"></i> Baixar meu CV
+            </a>
+        </div>
+
+        <form action="https://formspree.io/f/xanogzbk" method="POST" class="contato-form">
+            <label for="name">Nome</label>
+            <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+            
+            <label for="message">Mensagem</label>
+            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+            
+            <button type="submit" class="cta-button cta-primario">Enviar Mensagem</button>
+        </form>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-links">
+        <a href="https://github.com/marcioluca" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/marcio-lucas-dev" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+    </div>
+    <p>&copy; 2025 Márcio Lucas. Todos os direitos reservados.</p>
+</footer>
+
 </body>
+<script src="script.js"></script>
+
 </html>

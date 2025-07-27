@@ -1,0 +1,669 @@
+/* ==========================================================================
+   1. CONFIGURAÇÕES GLOBAIS E VARIÁVEIS DE TEMA
+   ========================================================================== */
+
+/* Importação da fonte (movida para o HTML para melhor performance) */
+
+:root {
+  /* TEMA PADRÃO (DARK MODE) */
+  --cor-fundo-principal: #0B0C1D;
+  --cor-fundo-secundario: #1c1d3b;
+  --cor-destaque: #00CFE8;
+  --cor-destaque-hover: #33e1f0;
+  --cor-texto-principal: #F0F8FF;
+  --cor-texto-secundario: #A9A9A9;
+  --cor-borda: rgba(0, 207, 232, 0.2);
+  --sombra-destaque: rgba(0, 207, 232, 0.15);
+}
+
+body.light-theme {
+  /* TEMA CLARO (LIGHT MODE) */
+  --cor-fundo-principal: #F4F7F9;
+  --cor-fundo-secundario: #FFFFFF;
+  --cor-destaque: #007BFF;
+  --cor-destaque-hover: #0056b3;
+  --cor-texto-principal: #212529;
+  --cor-texto-secundario: #6c757d;
+  --cor-borda: rgba(0, 0, 0, 0.1);
+  --sombra-destaque: rgba(0, 0, 0, 0.08);
+}
+
+/* Reset básico e estilos do corpo da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.6;
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-texto-principal);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body:not(.light-theme) {
+  background-image: linear-gradient(rgba(11, 12, 29, 0.92), rgba(11, 12, 29, 0.92)), url('assets/fundo-fixo.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+
+/* ==========================================================================
+   2. LAYOUT PRINCIPAL (HEADER, FOOTER, SEÇÕES)
+   ========================================================================== */
+
+header {
+  background-color: var(--cor-fundo-principal);
+  width: 100%;
+  padding: 1rem 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px var(--sombra-destaque);
+  transition: background-color 0.3s ease;
+}
+
+header nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 25px;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem 0;
+  margin-top: 2rem;
+  border-top: 1px solid var(--cor-borda);
+}
+
+.secao {
+  padding: 120px 20px 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--cor-borda);
+}
+
+.secao:last-of-type {
+  border-bottom: none;
+}
+
+
+/* ==========================================================================
+   3. COMPONENTES E TEXTOS GERAIS
+   ========================================================================== */
+
+/* Fontes de Destaque */
+h1, h2, h3, h4, h5, h6,
+.cta-button,
+header .logo span,
+.projeto-stack span,
+.servico-card h3 {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  font-variant-ligatures: common-ligatures;
+}
+
+header .logo span {
+  color: var(--cor-destaque);
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+
+header nav ul li {
+  margin-left: 25px;
+}
+
+header nav ul li a {
+  color: var(--cor-texto-principal);
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo-principal);
+}
+
+.secao h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2.5rem;
+  color: var(--cor-destaque);
+}
+
+/* Links de texto dentro de parágrafos */
+.secao p a {
+  color: var(--cor-destaque);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.secao p a:hover {
+  filter: brightness(85%);
+}
+
+.cta-button {
+  padding: 12px 28px;
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.2s ease-in-out;
+  border: 2px solid var(--cor-destaque);
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 15px var(--sombra-destaque);
+}
+
+a.cta-primario {
+  background-color: var(--cor-destaque);
+  color: var(--cor-fundo-principal);
+}
+
+a.cta-primario:hover {
+  background-color: var(--cor-destaque-hover);
+  border-color: var(--cor-destaque-hover);
+}
+
+
+/* ==========================================================================
+   4. SEÇÃO DE INÍCIO (HERO)
+   ========================================================================== */
+
+#inicio {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--cor-fundo-principal);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+body:not(.light-theme) #inicio {
+  background-image: linear-gradient(rgba(11, 12, 29, 0.92), rgba(11, 12, 29, 0.92)), url('assets/fundo-espacial.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.inicio-container {
+  max-width: 1200px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#inicio .avatar {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 4px solid var(--cor-destaque);
+  margin-bottom: 1.5rem;
+  object-fit: cover;
+  box-shadow: 0 0 35px var(--sombra-destaque), 0 0 60px var(--sombra-destaque);
+}
+
+#inicio h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  min-height: 50px;
+  color: var(--cor-texto-principal);
+}
+
+#inicio .subtitulo-hero {
+  font-size: 1.2rem;
+  color: var(--cor-texto-secundario);
+  max-width: 600px;
+  margin-bottom: 2.5rem;
+}
+
+#inicio .botoes-cta {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#texto-digitado::after {
+  content: '|';
+  margin-left: 5px;
+  color: var(--cor-destaque);
+  animation: piscar 0.7s infinite;
+}
+
+#texto-digitado.digitacao-finalizada::after {
+  animation: none;
+  content: '';
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+/* ==========================================================================
+   5. SEÇÃO SOBRE MIM
+   ========================================================================== */
+
+#sobre .sobre-mim-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  align-items: flex-start;
+}
+
+#sobre .sobre-mim-texto {
+  flex: 2;
+  min-width: 300px;
+}
+
+#sobre .sobre-mim-texto h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+#sobre .sobre-mim-texto p {
+  color: var(--cor-texto-secundario);
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+#sobre .sobre-mim-texto strong {
+  color: var(--cor-destaque);
+  font-weight: 400;
+}
+
+#sobre .sobre-mim-skills {
+  flex: 1;
+  min-width: 300px;
+  background-color: var(--cor-fundo-secundario);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--cor-borda);
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+#sobre .skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 1.5rem;
+}
+
+#sobre .skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  text-align: center;
+}
+
+#sobre .skill-item i {
+  font-size: 3rem;
+  color: var(--cor-destaque);
+  transition: color 0.3s ease;
+}
+
+#sobre .skill-item span {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+}
+
+
+/* ==========================================================================
+   6. SEÇÃO DE SERVIÇOS
+   ========================================================================== */
+
+.servicos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.servico-card {
+  background-color: var(--cor-fundo-secundario);
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  border: 1px solid var(--cor-borda);
+  transition: all 0.3s ease;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--cor-destaque);
+  box-shadow: 0 10px 20px var(--sombra-destaque);
+}
+
+.servico-card i {
+  font-size: 3rem;
+  color: var(--cor-destaque);
+  margin-bottom: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.servico-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.servico-card p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-secundario);
+  line-height: 1.6;
+}
+
+
+/* ==========================================================================
+   7. SEÇÃO DE PROJETOS
+   ========================================================================== */
+
+.projetos-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.projeto-card {
+  background-color: var(--cor-fundo-secundario);
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--cor-borda);
+  transition: all 0.3s ease;
+}
+
+.projeto-card:hover {
+  transform: scale(1.03);
+  border-color: var(--cor-destaque);
+  box-shadow: 0 10px 30px var(--sombra-destaque);
+}
+
+.projeto-imagem {
+  position: relative;
+  height: 200px;
+}
+
+.projeto-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.projeto-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(11, 12, 29, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.projeto-card:hover .projeto-overlay {
+  opacity: 1;
+}
+
+.projeto-overlay .link-icone {
+  color: #fff;
+  font-size: 2rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.projeto-overlay .link-icone:hover {
+  color: var(--cor-destaque);
+  transform: scale(1.2);
+}
+
+.projeto-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.projeto-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.projeto-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.projeto-stack span {
+  background-color: var(--cor-fundo-principal);
+  color: var(--cor-destaque);
+  font-size: 0.8rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 15px;
+  border: 1px solid var(--cor-borda);
+  transition: all 0.3s ease;
+}
+
+.projeto-info p {
+  color: var(--cor-texto-secundario);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+
+/* ==========================================================================
+   8. SEÇÃO DE CONTATO
+   ========================================================================== */
+
+.contato-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 3rem;
+  align-items: flex-start;
+}
+
+.contato-info,
+.contato-form {
+  flex: 1;
+  min-width: 300px;
+}
+
+.contato-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.contato-info p {
+  color: var(--cor-texto-secundario);
+  margin-bottom: 2rem;
+}
+
+.contato-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.contato-links a {
+  color: var(--cor-texto-secundario);
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.contato-links a:hover {
+  color: var(--cor-destaque);
+}
+
+.contato-links i {
+  color: var(--cor-destaque);
+  margin-right: 0.75rem;
+  width: 20px;
+  transition: color 0.3s ease;
+}
+
+.contato-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contato-form label {
+  margin-bottom: 0.5rem;
+  color: var(--cor-texto-secundario);
+}
+
+.contato-form input,
+.contato-form textarea {
+  background: var(--cor-fundo-secundario);
+  border: 1px solid transparent;
+  border-radius: 5px;
+  padding: 0.75rem;
+  margin-bottom: 1.5rem;
+  color: var(--cor-texto-principal);
+  font-family: 'Fira Code', monospace;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
+  resize: vertical;
+}
+
+.contato-form input:focus,
+.contato-form textarea:focus {
+  outline: none;
+  border-color: var(--cor-destaque);
+}
+
+.contato-form button {
+  align-self: flex-start;
+}
+
+
+/* ==========================================================================
+   9. RODAPÉ (FOOTER)
+   ========================================================================== */
+
+footer .footer-links {
+  margin-bottom: 1rem;
+}
+
+footer .footer-links a {
+  color: var(--cor-texto-secundario);
+  font-size: 1.8rem;
+  margin: 0 0.75rem;
+  transition: color 0.3s ease;
+}
+
+footer .footer-links a:hover {
+  color: var(--cor-destaque);
+}
+
+
+/* ==========================================================================
+   10. RESPONSIVIDADE (MENU HAMBÚRGUER)
+   ========================================================================== */
+
+.hamburger-menu {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--cor-texto-principal);
+  font-size: 1.8rem;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+@media (max-width: 768px) {
+  header nav .nav-links {
+    display: none;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  header nav .nav-links.mobile-menu-open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-fundo-principal);
+  }
+
+  header nav .nav-links.mobile-menu-open li {
+    margin: 0;
+  }
+
+  header nav .nav-links.mobile-menu-open li a {
+    font-size: 1.5rem;
+  }
+  #inicio {
+      height: auto;       /* A altura da seção se ajustará ao conteúdo */
+      min-height: 90vh;   /* Garante que ainda tenha um bom impacto visual */
+      padding-top: 100px; /* Adiciona um respiro no topo */
+    }
+}
+
+
+/* ==========================================================================
+   11. BOTÃO DE TROCA DE TEMA
+   ========================================================================== */
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  color: var(--cor-texto-principal);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.theme-toggle:hover {
+  color: var(--cor-destaque);
+  transform: rotate(15deg);
+}
