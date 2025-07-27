@@ -1,88 +1,46 @@
-
-
----
-
-```markdown
 # 🌐 Portfólio Pessoal - Márcio Lucas
 
-Bem-vindo ao meu portfólio online! Este projeto foi criado para apresentar meus principais trabalhos, habilidades técnicas e minha trajetória como desenvolvedor Full-Stack. O portfólio é responsivo, moderno e conta com **tema claro/escuro (dark mode)** para melhor experiência do usuário.
+Bem-vindo ao meu portfólio! Este projeto foi desenvolvido para apresentar meus principais projetos, habilidades e trajetória como desenvolvedor **Full-Stack Java**. O site é totalmente responsivo e inclui **modo claro/escuro** para melhor experiência do usuário.
 
-🔗 Acesse o site: [marcioluca.github.io/portifolio-mlucas](https://marcioluca.github.io/portifolio-mlucas)
+🔗 Acesse: [marcioluca.github.io/portifolio-mlucas](https://marcioluca.github.io/portifolio-mlucas)
 
 ---
 
 ## 👨‍💻 Sobre mim
 
-Sou um desenvolvedor apaixonado por tecnologia, com foco em desenvolvimento **Back-End com Java** e interesse constante por novas ferramentas e boas práticas. Atualmente curso **Análise e Desenvolvimento de Sistemas** e desenvolvo projetos próprios para praticar e me manter atualizado.
+Sou estudante de **Análise e Desenvolvimento de Sistemas** e desenvolvedor com foco em **Back-End Java**. Gosto de criar soluções funcionais e acessíveis, além de estudar constantemente boas práticas, tecnologias modernas e estruturação de código limpo.
 
 ---
 
-## 🛠️ Tecnologias utilizadas
+## 🛠️ Tecnologias
 
-Este portfólio foi desenvolvido com as seguintes tecnologias:
-
-- **HTML5** – Estrutura semântica das páginas
+- **HTML5** – Estrutura semântica
 - **CSS3** – Estilização customizada e responsiva
-- **JavaScript** – Lógica para interação do usuário e alternância de tema
-- **Modo Dark/Light** – Com JavaScript e CSS personalizados
-- **Git e GitHub** – Versionamento e hospedagem com GitHub Pages
+- **JavaScript** – Lógica do modo dark/light e interações
+- **Git & GitHub** – Versionamento e deploy via GitHub Pages
 
 ---
 
 ## 💡 Funcionalidades
 
-- ✅ Design responsivo (mobile-first)
-- ✅ Alternância entre tema **claro** e **escuro** com JavaScript
-- ✅ Estrutura modular e organizada
-- ✅ Seções com: Sobre mim, Projetos, Habilidades e Contato
+- 📱 **Design responsivo** (mobile-first)
+- 🌗 Alternância entre **tema claro e escuro**
+- 📄 Seções bem definidas: *Sobre, Projetos, Habilidades e Contato*
+- 📂 Código limpo e organizado
 
 ---
 
-## 🖼️ Screenshot
-
-
-```
+## 🖼️ Preview
 
 ![Screenshot do Portfólio](./assets/Screenshot.png)
 
-````
-
 ---
 
-## 📂 Como visualizar localmente
+## 🚀 Como rodar localmente
 
-Caso queira clonar e rodar localmente:
+Clone o repositório e abra o arquivo `index.html`:
 
 ```bash
 git clone https://github.com/marcioluca/portifolio-mlucas.git
 cd portifolio-mlucas
 start index.html
-````
-
-Ou simplesmente abra o arquivo `index.html` no navegador.
-
----
-
-## 📌 Status do Projeto
-
-✅ Finalizado e publicado
-🚀 Aberto para melhorias e atualizações futuras
-
----
-
-## 🤝 Feedback e contribuição
-
-Este é um projeto pessoal com fins de aprendizado e apresentação profissional. Sugestões, feedbacks ou ideias são sempre bem-vindas!
-
----
-
-## 📫 Contato
-
-* 📧 Email: [marcioluca.dev@gmail.com](mailto:marcioluca.dev@gmail.com)
-* 💼 LinkedIn: [linkedin.com/in/marcioluca](https://www.linkedin.com/in/marcioluca)
-
----
-
-> Feito com 💻, café ☕ e dedicação por **Márcio Lucas**
-
-```
