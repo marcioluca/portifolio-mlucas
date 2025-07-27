@@ -1,23 +1,88 @@
+Perfeito, Márcio! Com essa nova informação, aqui está a versão atualizada e mais completa do seu `README.md`, incluindo o uso de JavaScript para lógica e alternância entre tema claro/escuro (dark mode):
 
-# Portfólio - Márcio Lucas
+---
 
-Este é o meu portfólio online, desenvolvido para mostrar minhas habilidades em desenvolvimento web e outros projetos de programação. O portfólio foi criado com HTML e CSS.
+```markdown
+# 🌐 Portfólio Pessoal - Márcio Lucas
 
-![image](https://github.com/user-attachments/assets/12650295-f14d-4d0e-a5ce-5cbda0cb60c1)
+Bem-vindo ao meu portfólio online! Este projeto foi criado para apresentar meus principais trabalhos, habilidades técnicas e minha trajetória como desenvolvedor Full-Stack. O portfólio é responsivo, moderno e conta com **tema claro/escuro (dark mode)** para melhor experiência do usuário.
+
+🔗 Acesse o site: [marcioluca.github.io/portifolio-mlucas](https://marcioluca.github.io/portifolio-mlucas)
+
+---
+
+## 👨‍💻 Sobre mim
+
+Sou um desenvolvedor apaixonado por tecnologia, com foco em desenvolvimento **Back-End com Java** e interesse constante por novas ferramentas e boas práticas. Atualmente curso **Análise e Desenvolvimento de Sistemas** e desenvolvo projetos próprios para praticar e me manter atualizado.
+
+---
+
+## 🛠️ Tecnologias utilizadas
+
+Este portfólio foi desenvolvido com as seguintes tecnologias:
+
+- **HTML5** – Estrutura semântica das páginas
+- **CSS3** – Estilização customizada e responsiva
+- **JavaScript** – Lógica para interação do usuário e alternância de tema
+- **Modo Dark/Light** – Com JavaScript e CSS personalizados
+- **Git e GitHub** – Versionamento e hospedagem com GitHub Pages
+
+---
+
+## 💡 Funcionalidades
+
+- ✅ Design responsivo (mobile-first)
+- ✅ Alternância entre tema **claro** e **escuro** com JavaScript
+- ✅ Estrutura modular e organizada
+- ✅ Seções com: Sobre mim, Projetos, Habilidades e Contato
+
+---
+
+## 🖼️ Screenshot
 
 
-## Tecnologias Utilizadas
+```
 
-- **HTML5**: Estrutura da página.
-- **CSS3**: Estilos e layout responsivo.
-- **GitHub Pages**: Hospedagem do portfólio online.
+![Screenshot do Portfólio](./assets/Screenshot.png)
 
-## Funcionalidades
+````
 
-- **Design Responsivo**: O portfólio é otimizado para diferentes tamanhos de tela (desktop, tablet e celular).
-- **Seções do Portfólio**: Inclui uma seção sobre mim, habilidades, experiência e formas de contato.
+---
 
-## Como Acessar
+## 📂 Como visualizar localmente
 
-Você pode acessar o meu portfólio através do seguinte link:  
-[Portfólio Márcio Lucas](https://marcioluca.github.io/portifolio-alura/index.html)
+Caso queira clonar e rodar localmente:
+
+```bash
+git clone https://github.com/marcioluca/portifolio-mlucas.git
+cd portifolio-mlucas
+start index.html
+````
+
+Ou simplesmente abra o arquivo `index.html` no navegador.
+
+---
+
+## 📌 Status do Projeto
+
+✅ Finalizado e publicado
+🚀 Aberto para melhorias e atualizações futuras
+
+---
+
+## 🤝 Feedback e contribuição
+
+Este é um projeto pessoal com fins de aprendizado e apresentação profissional. Sugestões, feedbacks ou ideias são sempre bem-vindas!
+
+---
+
+## 📫 Contato
+
+* 📧 Email: [marcioluca.dev@gmail.com](mailto:marcioluca.dev@gmail.com)
+* 💼 LinkedIn: [linkedin.com/in/marcioluca](https://www.linkedin.com/in/marcioluca)
+
+---
+
+> Feito com 💻, café ☕ e dedicação por **Márcio Lucas**
+
+```
