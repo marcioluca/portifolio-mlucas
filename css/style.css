@@ -636,9 +636,9 @@ footer .footer-links a:hover {
     font-size: 1.5rem;
   }
   #inicio {
-      height: auto;       /* A altura da seção se ajustará ao conteúdo */
-      min-height: 90vh;   /* Garante que ainda tenha um bom impacto visual */
-      padding-top: 100px; /* Adiciona um respiro no topo */
+      height: auto;       
+      min-height: 90vh;   
+      padding-top: 100px;
     }
 }
 
