@@ -296,9 +296,15 @@ body:not(.light-theme) #inicio {
   font-weight: 400;
 }
 
+#sobre .sobre-mim-skills-container {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
 #sobre .sobre-mim-skills {
-  flex: 1;
-  min-width: 300px;
   background-color: var(--cor-fundo-secundario);
   padding: 1.5rem;
   border-radius: 8px;
